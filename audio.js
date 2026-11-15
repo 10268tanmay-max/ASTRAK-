@@ -118,7 +118,7 @@ export function startMusic() {
   }
 
   if (!musicAudio) {musicAudio = new Audio(new URL('./assets/audio/space-galaxy-universe.mp3', import.meta.url));
-    musicAudio.loop = true;
+    musicAudio = new Audio(new URL('./assets/audio/space-galaxy-universe.mp3', import.meta.url));
     musicAudio.preload = 'auto';
     musicAudio.volume = 0;
     musicAudio.addEventListener('error', () => {
